@@ -1,0 +1,123 @@
+.hero {
+  background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 50%, #0f1419 100%);
+  padding: 4rem 2rem;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 80% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  &__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+
+
+}
+
+// Animation
+
+
+// Responsive
+@media (max-width: 1024px) {
+  .hero {
+    padding: 3rem 1.5rem;
+
+    &__container {
+      gap: 3rem;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+
+    &__container {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    &__discript {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+    }
+
+    &__buttons {
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      flex: 1;
+      min-width: 150px;
+      justify-content: center;
+    }
+
+    &__product {
+      max-width: 100%;
+    }
+
+    &__product-info {
+      bottom: -3px;
+      right: 1px;
+      padding: 0.35rem 0.8rem;
+    }
+
+    &__product-name {
+      font-size: 12px;
+    }
+
+    &__product-price {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+}

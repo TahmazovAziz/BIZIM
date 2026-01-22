@@ -1,0 +1,30 @@
+{
+    "adv1":{
+      "icon": "../../../src/assets/procent.jpeg",
+
+      "title": "Низкие комиссии",
+      "subtitle": "Всего 2% на вывод"
+    },
+
+    "adv2":{
+      "icon": "../../../src/assets/procent.jpeg",
+
+      "title": "Мгновенный вывод",
+      "subtitle": "Всего 2% на вывод"
+    },
+    
+    "adv3":{
+      "icon": "../../../src/assets/procent.jpeg",
+
+      "title": "100% безопасность",
+      "subtitle": "Всего 2% на вывод"
+    },
+    
+    "adv4":{
+      "icon": "../../../src/assets/procent.jpeg",
+      "title": "Быстрые сделки",
+      "subtitle": "Всего 2% на вывод"
+    }
+    
+    
+}

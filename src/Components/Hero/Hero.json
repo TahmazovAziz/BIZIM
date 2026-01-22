@@ -1,0 +1,14 @@
+{
+    "product1":{
+        "name":"Dragon lore",
+        "status":"VitrineHero",
+        "image":"../../../src/assets/product-1.png",
+        "price":123
+    },
+    "product2":{
+        "name":"Wolf",
+        "status":"Magaz",
+        "image":"https://www.spieltimes.io/wp-content/uploads/2023/06/CSGO.jpg",
+        "price":123
+    }
+}

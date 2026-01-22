@@ -1,0 +1,106 @@
+  
+  .header__get-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  
+  .header__money,
+  .header__account {
+    a{
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      background-color: #1a1f2e;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+  
+      &:hover {
+        background-color: #242938;
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  .header__money-image,
+  .header__account-image {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .header__money-text {
+    color: #00d26a;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .header__account .header__money-text {
+    color: #ffffff;
+  }
+ 
+  @media(max-width:1200px){
+    .header__search-input {
+      width: 140px;
+    }
+  }
+  @media (max-width: 1075px) {
+    .header__search-input {
+      width: 120px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+  .header {
+    &__nav,
+    &__search {
+      display: none;
+    }
+
+    &__get-info {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+    }
+
+    &__mobile-menu {
+      display: block;
+    }
+
+    &__money,
+    &__account {
+      padding: 0.5rem 0.75rem;
+    }
+
+    &__money-text {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__container {
+      padding: 0 1rem;
+    }
+
+    &__account {
+      .header__money-text {
+        display: none;
+      }
+    }
+
+    &__money-text {
+      font-size: 12px;
+    }
+  }
+}

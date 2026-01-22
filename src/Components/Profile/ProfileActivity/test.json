@@ -1,0 +1,34 @@
+{
+  "activityList": [
+    {
+      "type": "buy",
+      "icon": "../../src/assets/puy.svg",
+      "details": {
+        "text": "Покупка AWP | Dragon Lore",
+        "time": "2 часа назад"
+      },
+      "amount": 5200.00,
+      "amountType": "negative"
+    },
+    {
+      "type": "sell",
+      "icon": "../../src/assets/sell.svg",
+      "details": {
+        "text": "Продажа AK-47 | Fire Serpent",
+        "time": "5 часов назад"
+      },
+      "amount": 3800.00,
+      "amountType": "positive"
+    },
+    {
+      "type": "trade",
+      "icon": "../../src/assets/trade.svg",
+      "details": {
+        "text": "Обмен на M4A1-S | Hyper Beast",
+        "time": "1 день назад"
+      },
+      "amount": 1250.00,
+      "amountType": "negative"
+    }
+  ]
+}

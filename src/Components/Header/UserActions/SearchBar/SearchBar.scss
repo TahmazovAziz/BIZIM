@@ -1,0 +1,28 @@
+  .header__search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #1a1f2e;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+
+    &-image {
+      width: 16px;
+      height: 16px;
+      opacity: 0.5;
+      flex-shrink: 0;
+    }
+
+    &-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-size: 14px;
+      width: 180px;
+
+      &::placeholder {
+        color: #8b92a0;
+      }
+    }
+  }

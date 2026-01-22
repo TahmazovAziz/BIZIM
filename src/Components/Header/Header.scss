@@ -1,0 +1,96 @@
+.header {
+  background-color: #0f1419;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    &__container {
+      padding: 0 1.5rem;
+    }
+
+    &__nav {
+      margin: 0 1.5rem;
+    }
+
+    &__links {
+      gap: 1rem;
+    }
+
+    &__search-input {
+      width: 140px;
+    }
+  }
+}
+
+
+@media (max-width: 1075px) {
+  .header {
+    &__container {
+      padding: 0 1rem;
+    }
+
+    &__nav {
+      margin: 0 1rem;
+    }
+
+    &__links {
+      gap: 1rem;
+    }
+
+    &__item a {
+      font-size: 14px;
+    }
+
+    &__search-input {
+      width: 120px;
+    }
+  }
+}
+
+  @media (max-width: 1000px) {
+  .header {
+    &__nav,
+    &__search {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__container {
+      padding: 0 1rem;
+    }
+
+    &__account {
+      .header__money-text {
+        display: none;
+      }
+    }
+
+    &__money-text {
+      font-size: 12px;
+    }
+  }
+
+  .logo {
+    &__image {
+      width: 28px;
+      height: 28px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

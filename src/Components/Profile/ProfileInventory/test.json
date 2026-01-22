@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "./images/product-1.png",
+    "name": "AWP | Dragon Lore",
+    "price": 5200.00,
+    "wear": "Factory New"
+  },
+  {
+    "id": 2,
+    "image": "./images/product-2.png",
+    "name": "AK-47 | Fire Serpent",
+    "price": 1850.00,
+    "wear": "Minimal Wear"
+  },
+  {
+    "id": 3,
+    "image": "./images/product-3.png",
+    "name": "M4A1-S | Knight",
+    "price": 420.50,
+    "wear": "Field-Tested"
+  }
+]

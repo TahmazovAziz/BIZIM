@@ -1,0 +1,364 @@
+.popular {
+  background-color: #0f1419;
+  padding: 4rem 2rem;
+
+  &__container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    padding-left: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, #00d26a 0%, #00b8ff 100%);
+      border-radius: 2px;
+    }
+  }
+
+  &__view-all {
+    color: #00d26a;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #00b8ff;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    padding: 0.75rem 1.5rem;
+    background-color: #1a1f2e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #8b92a0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #242938;
+      border-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
+    &_active {
+      background: linear-gradient(135deg, #00d26a 0%, #00a854 100%);
+      color: #ffffff;
+      border-color: transparent;
+
+      &:hover {
+        background: linear-gradient(135deg, #00a854 0%, #008040 100%);
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  &__card {
+    background: linear-gradient(135deg, #1a1f2e 0%, #151921 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 210, 106, 0.3);
+      box-shadow: 0 15px 40px rgba(0, 210, 106, 0.15);
+
+      .popular__card-image img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__card-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__card-content {
+    padding: 1.25rem;
+  }
+
+  &__card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 0.75rem 0;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00d26a;
+      }
+    }
+  }
+
+  &__card-labels {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__card-label {
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    &_covert {
+      background-color: rgba(235, 75, 75, 0.15);
+      color: #eb4b4b;
+    }
+
+    &_contraband {
+      background-color: rgba(228, 174, 57, 0.15);
+      color: #e4ae39;
+    }
+
+    &_restricted {
+      background-color: rgba(136, 71, 255, 0.15);
+      color: #8847ff;
+    }
+
+    &_new {
+      background-color: rgba(0, 210, 106, 0.15);
+      color: #00d26a;
+    }
+
+    &_tested {
+      background-color: rgba(255, 211, 105, 0.15);
+      color: #ffd369;
+    }
+
+    &_minimal {
+      background-color: rgba(75, 181, 235, 0.15);
+      color: #4bb5eb;
+    }
+
+    &_worn {
+      background-color: rgba(175, 175, 175, 0.15);
+      color: #afafaf;
+    }
+  }
+
+  &__card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__card-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00d26a;
+    margin: 0;
+  }
+
+  &__card-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__card-compare,
+  &__card-cart {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242938;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #8b92a0;
+
+    &:hover {
+      background-color: #2d3548;
+      border-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+  }
+
+  &__card-cart {
+    background: linear-gradient(135deg, #00d26a 0%, #00a854 100%);
+    color: #ffffff;
+    border-color: transparent;
+
+    &:hover {
+      background: linear-gradient(135deg, #00a854 0%, #008040 100%);
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 1400px) {
+  .popular {
+    &__cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .popular {
+    padding: 3rem 1.5rem;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+    &__card-image {
+      height: 180px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .popular {
+    padding: 2.5rem 1rem;
+
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__buttons {
+      gap: 0.75rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #1a1f2e;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #00d26a;
+        border-radius: 2px;
+      }
+    }
+
+    &__button {
+      padding: 0.65rem 1.25rem;
+      font-size: 13px;
+    }
+
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    &__card-image {
+      height: 220px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .popular {
+    padding: 2rem 1rem;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__card-content {
+      padding: 1rem;
+    }
+
+    &__card-title {
+      font-size: 15px;
+    }
+
+    &__card-price {
+      font-size: 18px;
+    }
+
+    &__card-compare,
+    &__card-cart {
+      width: 32px;
+      height: 32px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

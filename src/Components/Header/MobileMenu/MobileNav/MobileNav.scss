@@ -1,0 +1,31 @@
+  .header__mobile-nav {
+    margin-bottom: 2rem;
+  }
+
+  .header__mobile-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header__mobile-item {
+    a {
+      display: block;
+      color: #8b92a0;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:active {
+        color: #ffffff;
+        background-color: #1a1f2e;
+      }
+    }
+  }
