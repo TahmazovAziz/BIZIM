@@ -1,26 +1,47 @@
 [
   {
     "id": 0,
-    "label": "Все"
+    "label": "Все",
+    "name":""
   },
   {
     "id": 1,
-    "label": "Винтовки"
+    "label": "Винтовки",
+    "name":"rifles"
+
   },
   {
     "id": 2,
-    "label": "Пистолеты"
+    "label": "Пистолеты",
+    "name":"pistols"
+
+
   },
   {
     "id": 3,
-    "label": "Ножи"
+    "label": "Ножи",
+    "name":"knives"
+
+
   },
   {
     "id": 4,
-    "label": "Перчатки"
+    "label": "Перчатки",
+    "name":"gloves"
+
+    
   },
   {
     "id": 5,
-    "label": "Цена: По убыванию"
+    "label": "Дробавики",
+    "name":"pistols"
+
+
+  },
+  {
+    "id": 6,
+    "label": "Снайперские",
+    "name":"sniper"
+
   }
 ]

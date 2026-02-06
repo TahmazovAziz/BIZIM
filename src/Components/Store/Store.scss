@@ -1,0 +1,352 @@
+.store {
+  background-color: #0f1419;
+  padding: 4rem 2rem;
+
+  &__container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, #00d26a 0%, #00b8ff 100%);
+      border-radius: 2px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #8b92a0;
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__sort-label {
+    color: #8b92a0;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__sort-select {
+    padding: 0.75rem 1.5rem;
+    background-color: #1a1f2e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    min-width: 200px;
+
+    &:hover {
+      background-color: #242938;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:focus {
+      border-color: rgba(0, 210, 106, 0.5);
+    }
+
+    option {
+      background-color: #1a1f2e;
+      color: #ffffff;
+    }
+  }
+
+  &__products {
+    margin-bottom: 3rem;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  &__pagination-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #1a1f2e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #8b92a0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    &:hover:not(:disabled) {
+      background-color: #242938;
+      border-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &_prev,
+    &_next {
+      min-width: 100px;
+    }
+  }
+
+  &__pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__pagination-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1f2e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #8b92a0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #242938;
+      border-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
+    &_active {
+      background: linear-gradient(135deg, #00d26a 0%, #00a854 100%);
+      color: #ffffff;
+      border-color: transparent;
+
+      &:hover {
+        background: linear-gradient(135deg, #00a854 0%, #008040 100%);
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 1400px) {
+  .store {
+    &__products {
+      .popular__cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .store {
+    padding: 3rem 1.5rem;
+
+    &__title {
+      font-size: 36px;
+      padding-left: 1.25rem;
+    }
+
+    &__subtitle {
+      padding-left: 1.25rem;
+      font-size: 16px;
+    }
+
+    &__filters {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    &__filter-buttons {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #1a1f2e;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #00d26a;
+        border-radius: 2px;
+      }
+    }
+
+    &__sort {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__sort-select {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    &__products {
+      .popular__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .store {
+    padding: 2.5rem 1rem;
+
+    &__title {
+      font-size: 32px;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__subtitle {
+      padding-left: 1rem;
+      font-size: 15px;
+    }
+
+    &__filters {
+      margin-bottom: 2rem;
+    }
+
+    &__filter-buttons {
+      gap: 0.75rem;
+    }
+
+    &__products {
+      .popular__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    &__pagination {
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    &__pagination-button {
+      padding: 0.65rem 1.25rem;
+      font-size: 13px;
+
+      &_prev,
+      &_next {
+        min-width: 80px;
+      }
+    }
+
+    &__pagination-number {
+      width: 36px;
+      height: 36px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .store {
+    padding: 2rem 1rem;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__sort {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 0.75rem;
+    }
+
+    &__sort-label {
+      font-size: 13px;
+    }
+
+    &__sort-select {
+      width: 100%;
+      max-width: 100%;
+      padding: 0.65rem 1.25rem;
+      font-size: 13px;
+    }
+
+    &__pagination {
+      gap: 0.5rem;
+    }
+
+    &__pagination-button {
+      padding: 0.6rem 1rem;
+      font-size: 12px;
+
+      &_prev,
+      &_next {
+        min-width: 70px;
+      }
+    }
+
+    &__pagination-number {
+      width: 32px;
+      height: 32px;
+      font-size: 12px;
+    }
+  }
+}
+

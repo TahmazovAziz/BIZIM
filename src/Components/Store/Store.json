@@ -1,0 +1,154 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "category": "knives",
+      "name": "Karambit | Fade",
+      "image": "./images/product-1.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "FACTORY NEW", "class": "popular__card-label_new" },
+      "price": 1850.00
+    },
+    {
+      "id": 2,
+      "category": "knives",
+      "name": "Butterfly Knife | Doppler",
+      "image": "./images/product-2.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "FACTORY NEW", "class": "popular__card-label_new" },
+      "price": 2450.00
+    },
+    {
+      "id": 3,
+      "category": "rifles",
+      "name": "AK-47 | Fire Serpent",
+      "image": "./images/product-3.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "MINIMAL WEAR", "class": "popular__card-label_mw" },
+      "price": 1200.00
+    },
+    {
+      "id": 4,
+      "category": "pistols",
+      "name": "Desert Eagle | Printstream",
+      "image": "./images/product-4.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "FACTORY NEW", "class": "popular__card-label_new" },
+      "price": 850.00
+    },
+    {
+      "id": 5,
+      "category": "sniper",
+      "name": "AWP | Dragon Lore",
+      "image": "./images/product-5.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "FIELD-TESTED", "class": "popular__card-label_ft" },
+      "price": 4500.00
+    },
+    {
+      "id": 6,
+      "category": "rifles",
+      "name": "M4A4 | Howl",
+      "image": "./images/product-6.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "MINIMAL WEAR", "class": "popular__card-label_mw" },
+      "price": 3200.00
+    },
+    {
+      "id": 7,
+      "category": "gloves",
+      "name": "Sport Gloves | Hedge Maze",
+      "image": "./images/product-7.png",
+      "link": "view-product.html",
+      "rarity": { "type": "EXTRAORDINARY", "class": "popular__card-label_ex" },
+      "condition": { "type": "FIELD-TESTED", "class": "popular__card-label_ft" },
+      "price": 1650.00
+    },
+    {
+      "id": 8,
+      "category": "pistols",
+      "name": "USP-S | Monster Mashup",
+      "image": "./images/product-8.png",
+      "link": "view-product.html",
+      "rarity": { "type": "CLASSIFIED", "class": "popular__card-label_classified" },
+      "condition": { "type": "FACTORY NEW", "class": "popular__card-label_new" },
+      "price": 420.00
+    },
+    {
+      "id": 9,
+      "category": "shotguns",
+      "name": "Nova | Predator",
+      "image": "./images/product-9.png",
+      "link": "view-product.html",
+      "rarity": { "type": "CLASSIFIED", "class": "popular__card-label_classified" },
+      "condition": { "type": "MINIMAL WEAR", "class": "popular__card-label_mw" },
+      "price": 280.00
+    },
+    {
+      "id": 10,
+      "category": "sniper",
+      "name": "SSG 08 | Blood in the Water",
+      "image": "./images/product-10.png",
+      "link": "view-product.html",
+      "rarity": { "type": "CLASSIFIED", "class": "popular__card-label_classified" },
+      "condition": { "type": "FACTORY NEW", "class": "popular__card-label_new" },
+      "price": 650.00
+    },
+    {
+      "id": 11,
+      "category": "rifles",
+      "name": "M4A1-S | Knight",
+      "image": "./images/product-11.png",
+      "link": "view-product.html",
+      "rarity": { "type": "CLASSIFIED", "class": "popular__card-label_classified" },
+      "condition": { "type": "FIELD-TESTED", "class": "popular__card-label_ft" },
+      "price": 380.00
+    },
+    {
+      "id": 12,
+      "category": "knives",
+      "name": "M9 Bayonet | Crimson Web",
+      "image": "./images/product-12.png",
+      "link": "view-product.html",
+      "rarity": { "type": "COVERT", "class": "popular__card-label_covert" },
+      "condition": { "type": "MINIMAL WEAR", "class": "popular__card-label_mw" },
+      "price": 1100.00
+    },
+    {
+      "id": 13,
+      "category": "gloves",
+      "name": "Specialist Gloves | Crimson Kimono",
+      "image": "./images/product-13.png",
+      "link": "view-product.html",
+      "rarity": { "type": "EXTRAORDINARY", "class": "popular__card-label_ex" },
+      "condition": { "type": "WELL-WORN", "class": "popular__card-label_ww" },
+      "price": 950.00
+    },
+    {
+      "id": 14,
+      "category": "pistols",
+      "name": "P2000 | Wicked Sick",
+      "image": "./images/product-14.png",
+      "link": "view-product.html",
+      "rarity": { "type": "RESTRICTED", "class": "popular__card-label_restricted" },
+      "condition": { "type": "FACTORY NEW", "class": "popular__card-label_new" },
+      "price": 150.00
+    },
+    {
+      "id": 15,
+      "category": "shotguns",
+      "name": "MAG-7 | Monster Call",
+      "image": "./images/product-15.png",
+      "link": "view-product.html",
+      "rarity": { "type": "RESTRICTED", "class": "popular__card-label_restricted" },
+      "condition": { "type": "MINIMAL WEAR", "class": "popular__card-label_mw" },
+      "price": 95.00
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PopularButton from "./PopularButton/PopularButton";
+import PopularButton from "../UI/PopularButton/PopularButton";
 import './Popular.scss'
 import popular from './Popular.json'
 export default function Popular(){
@@ -14,7 +14,7 @@ export default function Popular(){
                 
                 <div className="popular__buttons">
                     {Object.values(popular).map((item, index) => (
-                        <PopularButton active={selectedIndex == index} onClick={()=>setSelectedIndex(index)}>{item.label}</PopularButton>
+                        <PopularButton activeClass="popular__button_active" standartClass="popular__button" active={selectedIndex == index} onClick={()=>setSelectedIndex(index)}>{item.label}</PopularButton>
                     ))}
                 </div>
                 

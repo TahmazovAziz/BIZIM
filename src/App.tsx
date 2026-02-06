@@ -6,6 +6,7 @@ import Hero from './Components/Hero/Hero'
 import HowWork from './Components/HowWork/HowWork'
 import Popular from './Components/Popular/Popular'
 import Profile from './Components/Profile/Profile'
+import Store from './Components/Store/Store'
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
       <Advantages/>
       <Popular/>
       <HowWork/>
-      <Footer/> */}
       <Profile/>
+      <Footer/> */}
+      <Store/>
     </div>
   )
 }
